@@ -1,0 +1,17 @@
+.bg-inea{
+    background: #005b97 !important;
+    color:#ffffff;
+}
+
+
+.text-inea-white{
+    color: #ffffff !important;
+}
+
+.btn-bg-inea{
+    background: #005b97 !important;
+    color:#ffffff;
+}
+.btn-bg-inea:hover{
+    background: #0067ab !important;
+}
