@@ -263,25 +263,27 @@ return [
                     'text' => 'Usuarios',
                     'url'  => 'users',
                     'icon'        => 'fas fa-fw fa-users',
+                    'can' => 'user_index'
                     
                 ],
                 [
                     'text' => 'Permisos',
                     'url'  => 'permissions',
-                  //  'can'  => 'permission_index'
+                    'can'  => 'permission_index'
 
                 ],
                 [
                     'text' => 'Roles',
                     'url'  => 'roles',
                     'icon'        => 'fas fa-fw fa-address-card',
+                    'can' => 'role_show'
                     
                 ],
                 [
                     'text' => 'Capitanías/Circunscrip...',
                     'url'  => 'capitanias',
                     'icon'        => 'fas fa-fw fa-anchor',
-                   // 'can'  => 'capitania_index'
+                    'can'  => 'capitania_index'
 
                     
 

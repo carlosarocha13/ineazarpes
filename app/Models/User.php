@@ -25,10 +25,15 @@ class User extends Authenticatable implements MustVerifyEmail
      * @var string[]
      */
 
-    protected $guard_name = 'Sanctum';
+    protected $guard_name = 'web';
 
     protected $fillable = [
-        'name',
+        'nombres',
+        'apellidos',
+        'tipo_documento',
+        'numero_identificacion',
+        'telefono',
+        'direccion',
         'email',
         'password',
     ];
