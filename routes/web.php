@@ -65,7 +65,15 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::put('/roles/{role}', [App\Http\Controllers\RoleController::class, 'update' ])->name('roles.update');
     Route::delete('/roles/{role}', [App\Http\Controllers\RoleController::class, 'destroy' ])->name('roles.destroy');
 
-    
+    Route::get('/marinas', [App\Http\Controllers\MarinaController::class, 'index' ])->name('marinas');
+    Route::get('/marinas/create', [App\Http\Controllers\MarinaController::class, 'create' ])->name('marinas.create');
+    Route::post('/marinas', [App\Http\Controllers\MarinaController::class, 'store' ])->name('marinas.store');
+    Route::get('/marinas/{marina}', [App\Http\Controllers\MarinaController::class, 'show' ])->name('marinas.show');
+    Route::get('/marinas/{marina}/edit', [App\Http\Controllers\MarinaController::class, 'edit' ])->name('marinas.edit');
+    Route::put('/marinas/{marina}', [App\Http\Controllers\MarinaController::class, 'update' ])->name('marinas.update');
+    Route::delete('/marinas/{marina}', [App\Http\Controllers\MarinaController::class, 'destroy' ])->name('marinas.destroy');
+
+
 });
 
 /*

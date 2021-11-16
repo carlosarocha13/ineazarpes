@@ -268,7 +268,7 @@ return [
                 [
                     'text' => 'Permisos',
                     'url'  => 'permissions',
-                  //  'can'  => 'permission_index'
+                    //'can'  => 'permission_index'
 
                 ],
                 [
@@ -288,8 +288,9 @@ return [
                 ],
                 [
                     'text' => 'Admin. Marinas deportivas',
-                    'url'  => '#',
-                    'icon'        => 'fas fa-fw fa-ship',
+                    'url'  => 'marinas',
+                    'icon'  => 'fas fa-fw fa-ship',
+                   // 'can' => 'marina_index'
                 ],
                
                  
@@ -299,7 +300,7 @@ return [
         ],
         [
             'text'        => 'Solicitudes de Zarpe',
-            'url'         => 'dash/create',
+            'url'         => '#',
             'icon'        => 'far fa-fw fa-file',
             
         ],
