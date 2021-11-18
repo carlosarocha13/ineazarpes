@@ -2,8 +2,12 @@
 
 return [
 
-    'full_name'                   => 'Nombre completo',
+    'last_name'                   => 'Apellidos',
     'email'                       => 'Email',
+    'dni'                         => 'Documento de identificacion',
+    'type_identification'         => 'Tipo de identificacion',
+    'phone'                       => 'Telefono',
+    'address'                     => 'Direccion',
     'password'                    => 'Contraseña',
     'retype_password'             => 'Confirmar la contraseña',
     'remember_me'                 => 'Recordarme',

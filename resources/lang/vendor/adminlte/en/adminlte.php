@@ -2,8 +2,13 @@
 
 return [
 
-    'full_name'                   => 'Full name',
+    'full_name'                   => 'Name',
+    'last_name'                   => 'Last Name',
     'email'                       => 'Email',
+    'dni'                         => 'DNI',
+    'type_identification'         => 'Type of identification',
+    'phone'                       => 'Phone',
+    'address'                     => 'Address',
     'password'                    => 'Password',
     'retype_password'             => 'Retype password',
     'remember_me'                 => 'Remember Me',
