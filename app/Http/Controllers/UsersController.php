@@ -21,18 +21,28 @@ class UsersController extends Controller
 
     public function store(Request $request){
         $validated = $request->validate([
-            'name' => 'required',
+            'nombres' => 'required', 'string', 'max:255',
+            'apellidos' => 'required', 'string', 'max:255',
+            'tipo_documento' => 'required', 'string', 'max:20',
+            'numero_identificacion' => 'required', 'string', 'max:20',
+            'telefono' => 'required', 'string', 'max:20',
+            'direccion' => 'required|string|max:20',
             'email' => 'required|email|unique:users',
-            'password' => 'required',
-            'password_confirm' => 'required|same:password' 
-
+            'password' => 'required|min:9',
+            'password_confirm' => 'required|same:password'
         ]);
+        $user= new User();
+        $user->nombres= $request->nombres;
+        $user->apellidos= $request->apellidos;
+        $user->tipo_documento= $request->tipo_documento;
+        $user->numero_identificacion= $request->numero_identificacion;
+        $user->direccion= $request->direccion;
+        $user->telefono= $request->telefono;
+        $user->email= $request->email;
+        $user->password=bcrypt($request->input('password'));
+        $user->email_verified_at= now();
+        $user->save();
 
-        $user= User::create($request->only('name','email')
-         +[
-             'password'=>bcrypt($request->input('password')),
-        ]);
-        
         $roles=$request->input('roles', []);
         $user->roles()->sync($roles);
 
