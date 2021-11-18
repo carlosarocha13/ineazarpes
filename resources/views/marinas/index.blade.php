@@ -22,23 +22,31 @@
         @endif
             <div class="row">
                 <div class="col-12 text-right">
-                    <a href= "marinas/create" class="btn btn-sm btn-info">Nueva</a>
+                    <a href= "marinas/create" class="btn btn-sm btn-info btn-bg-inea">Nueva</a>
                 </div>
             </div>
             <div class="my-3">
             <table class="table table-striped table-bordered" style="width:100%" id="TableMarinas">
                 <thead class="text-primary">
-                    <th>ID</th>
+                    
                     <th>Nombre</th>
+                    <th>Rif</th>
+                    <th>Siglas</th>
+                    <th>Adm. Portuario</th>
                     <th class="text-center">Acciones</th>                     
                 </thead>
                 <tbody>
                 @foreach($marinas as $marina)
                         <tr>
-                            <td> {{$marina->id}} </td>
+                            
                             <td>{{$marina->nombre}} </td>
-                                    
+                            <td> {{$marina->rif}} </td>
+                            <td> {{$marina->siglas}} </td>
+                            <td> {{$marina->adm_portuario}} </td>       
                             <td class="text-center"> 
+                                <a class="btn btn-sm btn-success" href=" {{route('marinas.show',$marina->id)}}" >
+                                    <i class="fa fa-search"></i>
+                                </a>
                                 <a class="btn btn-sm btn-info" href=" {{route('marinas.edit',$marina->id)}}" >                        
                                     <i class="fa fa-edit"></i>
                                  </a>

@@ -12,7 +12,7 @@
        <div class="card-body">
             <div class="row">
                 <div class="col-12 text-right">
-                    <a href= "#" class="btn btn-sm btn-info">Volver/crear</a>
+                    <a href= "#" class="btn btn-sm btn-info btn-bg-inea">Volver/crear</a>
                 </div>
             </div>
             <div class="my-3">

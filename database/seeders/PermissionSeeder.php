@@ -38,6 +38,12 @@ class PermissionSeeder extends Seeder
             'capitania_show',
             'capitania_edit',
             'capitania_destroy',
+
+            'marina_index',
+            'marina_create',
+            'marina_show',
+            'marina_edit',
+            'marina_destroy',
         ];
 
 

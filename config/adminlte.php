@@ -292,7 +292,7 @@ return [
                     'text' => 'Admin. Marinas deportivas',
                     'url'  => 'marinas',
                     'icon'  => 'fas fa-fw fa-ship',
-                   // 'can' => 'marina_index'
+                    'can' => 'marina_index'
                 ],
                
                  

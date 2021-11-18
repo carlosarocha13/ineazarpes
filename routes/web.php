@@ -29,6 +29,7 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
    // Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index');
     Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index' ])->name('dashboard');
+    Route::get('/home', [App\Http\Controllers\DashboardController::class, 'index' ])->name('dashboard');
     
     
     Route::get('/users', [App\Http\Controllers\UsersController::class, 'index' ])->name('users');

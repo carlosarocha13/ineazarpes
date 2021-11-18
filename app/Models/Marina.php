@@ -9,6 +9,6 @@ class Marina extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nombre','siglas','rif','adm_portuario','estado','sector','municipio','direccion','coordenadas','descripcion','tipo_instalacion','maritima_fluvial_lacustre','especialidad','tipo_carga','segun_pripiedad','segun_destinacion','segun_funcion','segun_interes'];
+    protected $fillable = ['nombre','siglas','rif','adm_portuario','estado','sector','municipio','direccion','coordenadas','descripcion','tipo_instalacion','maritima_fluvial_lacustre','especialidad','tipo_carga','segun_propiedad','segun_destinacion','segun_funcion','segun_interes'];
 
 }

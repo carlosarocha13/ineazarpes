@@ -18,21 +18,21 @@ class CreateMarinasTable extends Migration
             $table->string('siglas',10);
             $table->string('rif',11);
             $table->string('nombre',150);
-            $table->string('adm_portuario',10);
-            $table->string('estado',25);
-            $table->string('sector',25);
-            $table->string('municipio',25);
+            $table->string('adm_portuario',50);
+            $table->string('estado',50);
+            $table->string('sector',50);
+            $table->string('municipio',50);
             $table->string('direccion',300);
             $table->string('coordenadas',150);
             $table->text('descripcion');
             $table->string('tipo_instalacion',50);
             $table->string('maritima_fluvial_lacustre',25);
             $table->string('especialidad',50);
-            $table->string('tipo_carga',25);
-            $table->string('segun_pripiedad',25);
-            $table->string('segun_destinacion',25);
-            $table->string('segun_funcion',25);
-            $table->string('segun_interes',25);
+            $table->string('tipo_carga',50);
+            $table->string('segun_propiedad',50);
+            $table->string('segun_destinacion',50);
+            $table->string('segun_funcion',50);
+            $table->string('segun_interes',50);
            
 
 
