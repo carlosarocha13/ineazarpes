@@ -155,6 +155,9 @@ class MarinaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $marina=Marina::findOrFail($id);
+        $marina->delete();
+        return back()->with('success','El registro se ha eliminado con éxito.');
+   
     }
 }
